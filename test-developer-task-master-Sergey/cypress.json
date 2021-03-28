@@ -1,0 +1,8 @@
+{
+    "baseUrl": "http://localhost:3000/#",
+    "testFiles": "**/*.{feature,features}",
+    "experimentalNetworkStubbing": true,
+    "requestTimeout": 15000,
+    "pageLoadTimeout": 15000,
+    "defaultCommandTimeout": 15000
+}
