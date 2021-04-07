@@ -1,6 +1,8 @@
 const generateAsset = () => {
+    let initial = 100000000000
+    //or give as param to function
     const generateRandomNumber = () => {
-        return Math.floor(Math.random() * 10000000000);
+        return Math.floor(Math.random() * intial );
     };
     const generateRandomString = () => {
         return Math.random()
