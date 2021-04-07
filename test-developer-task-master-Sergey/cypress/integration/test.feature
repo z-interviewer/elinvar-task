@@ -1,25 +1,28 @@
 Feature: Checking 'Add Asset' page functionality
-#
-#  #Background:
-#  #...
-#
-  Scenario: Submit correct asset
+
+
+############ move to add asseet sset feature file 
+
+Background:
     Given I navigate to Add Asset tab
+
+Scenario: Submit correct asset
     When I input correct asset
     And I click on add asset button
     Then I received message that asset added successfully
     And I click on close button and close pop-up
 
-
   Scenario: Submit existing asset
-    Given I navigate to Add Asset tab
     When I input correct asset
     And I click on add asset button
     Then I received message that asset is already exist
     And I click on close button and close pop-up
 
-  Scenario: Searching existing asset
+############ this should be moved to existing asset feature file
+Background:
     Given I navigate to Existing Assets tab
+  
+  Scenario: Searching existing asset
     When I input asset value into search
     Then I see searched result in table
 
@@ -30,7 +33,7 @@ Feature: Checking 'Add Asset' page functionality
 
   Scenario: Checking displaying count of assets in the table
     Given I navigate to Existing Assets tab
-    When I select from Show entries to display 100 assets in the table
+    When I select from Show entries to display '100' assets in the table
     Then I see 100 asset in the table
 
   Scenario: Checking Pagination of assets in the table
@@ -42,5 +45,3 @@ Feature: Checking 'Add Asset' page functionality
     Given I navigate to Existing Assets tab
     When I click on sorting icon in the table
     Then I see asset sorted in ascending order in the table
-
-#
